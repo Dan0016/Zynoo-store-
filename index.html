@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <title>Zaynoo | زينو - متجر جزائري</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <h1>Zaynoo | زينو</h1>
+    <p class="slogan">توصيل سريع، دفع عند الاستلام، 58 ولاية</p>
+    <nav>
+      <a href="#electronics">الكترونيات</a>
+      <a href="#tools">أدوات</a>
+      <a href="#fashion">ملابس</a>
+      <a href="admin.html">تسجيل دخول المدير</a>
+    </nav>
+  </header>
+
+  <main>
+    <section id="electronics">
+      <h2>الكترونيات</h2>
+      <div class="product-list" id="electronics-list"></div>
+    </section>
+    <section id="tools">
+      <h2>أدوات</h2>
+      <div class="product-list" id="tools-list"></div>
+    </section>
+    <section id="fashion">
+      <h2>ملابس</h2>
+      <div class="product-list" id="fashion-list"></div>
+    </section>
+
+    <section id="order">
+      <h2>طلب المنتج</h2>
+      <form onsubmit="placeOrder(); return false;">
+        <input type="text" id="client-name" placeholder="الاسم الكامل" required>
+        <input type="tel" id="client-phone" placeholder="رقم الهاتف" required>
+        <select id="wilaya">
+          <option selected disabled>اختر ولايتك</option>
+        </select>
+        <input type="text" id="client-address" placeholder="العنوان الكامل" required>
+        <input type="hidden" id="selected-product">
+        <button type="submit">تأكيد الطلب - دفع عند الاستلام</button>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <p>تابعنا على:</p>
+    <div class="social">
+      <a href="https://facebook.com" target="_blank">Facebook</a>
+      <a href="https://instagram.com" target="_blank">Instagram</a>
+      <a href="https://wa.me/213600000000" target="_blank">WhatsApp</a>
+    </div>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>
